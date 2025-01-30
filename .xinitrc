@@ -5,7 +5,7 @@ fi
 # =================
 # start wm or de
 
-#exec dwm
-i3
+exec dwm
+#i3
 #startplasma-x11
 #startxfce4

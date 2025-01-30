@@ -5,6 +5,9 @@ require('mason-lspconfig').setup({
         "omnisharp",
         "clangd",
         "lua_ls",
+        "harper_ls",
+        "ast_grep",
+        "java_language_server"
     },
     handlers = {
         function(server_name)

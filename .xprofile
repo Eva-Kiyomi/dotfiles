@@ -33,11 +33,11 @@ elif [ "$DESKTOP_SESSION" = "cinnamon" ]; then
     if [ -f $XPROFILE_DIRECTORIES/.cinnamon ]; then
         . $XPROFILE_DIRECTORIES/.cinnamon
     fi
-elif [ "$XDG_SESSION_DESKTOP" = "dwm" ]; then
+elif [ "$DESKTOP_SESSION" = "dwm" ]; then
     if [ -f $XPROFILE_DIRECTORIES/.dwm ]; then
         . $XPROFILE_DIRECTORIES/.dwm
     fi
-elif [ "$XDG_SESSION_DESKTOP" = "i3" ]; then
+elif [ "$DESKTOP_SESSION" = "i3" ]; then
     if [ -f $XPROFILE_DIRECTORIES/.i3wm ]; then
         . $XPROFILE_DIRECTORIES/.i3wm
     fi
