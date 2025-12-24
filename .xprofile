@@ -21,7 +21,12 @@ XPROFILE_DIRECTORIES="$CONFIG_DIRECTORY/xprofiles"
 
 . "$CONFIG_DIRECTORY/scripts/setmousespeed.sh" &
 
-feh --bg-scale $CONFIG_DIRECTORY/desktop/desktop.jpg &
+xrandr --output HDMI-1-0 --primary --mode 2560x1440 --rate 144 --pos 1920x0 --output eDP-1 --mode 1920x1080 --rate 144 --pos 0x0
+
+#feh --bg-fill --no-xinerama $CONFIG_DIRECTORY/desktop/desktop.jpg &
+xwallpaper \
+  --output eDP-1  --zoom $CONFIG_DIRECTORY/desktop/desktop.jpg \
+  --output HDMI-1-0 --zoom $CONFIG_DIRECTORY/desktop/desktop.jpg &
 
 # ==================
 # load cfg by DE/WM 
